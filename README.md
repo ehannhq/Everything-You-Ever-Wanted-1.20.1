@@ -27,7 +27,7 @@ Why am I on GitHub? Because I want to work on my laptop and my PC.
 - Trident of the Void
 - Shield of the Void
 - Ender Dragon's Elytra
-- 
+
 
 ## Socials
 - [Instagram](https://www.instagram.com/ehann.h/)
