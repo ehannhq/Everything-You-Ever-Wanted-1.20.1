@@ -1,4 +1,4 @@
-# Everything and Anything (Forge 1.20.1)
+# Everything and Anything Mod (Forge 1.20.1)
 
 I barely know anything about Minecraft Modding, and I only have
 one semester's worth of AP Computer Science A. So, if the code or mod 
