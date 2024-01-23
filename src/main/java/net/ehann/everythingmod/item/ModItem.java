@@ -2,6 +2,8 @@ package net.ehann.everythingmod.item;
 
 import net.ehann.everythingmod.EverythingMod;
 import net.ehann.everythingmod.item.fortnite.*;
+import net.ehann.everythingmod.item.the_end.VoidstoneChunkItem;
+import net.ehann.everythingmod.item.the_end.VoidstoneItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -28,6 +30,14 @@ public class ModItem {
 
     public static final RegistryObject<Item> BANDAGES = ITEMS.register("bandages",
             () -> new BandagesItem(new Item.Properties().stacksTo(15)));
+
+    // THE END ITEMS
+
+    public static final RegistryObject<Item> VOIDSTONECHUNK = ITEMS.register("voidstone_chunk",
+            () -> new VoidstoneChunkItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> VOIDSTONE = ITEMS.register("voidstone",
+            () -> new VoidstoneItem(new Item.Properties().stacksTo(64)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

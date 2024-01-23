@@ -1,6 +1,7 @@
 package net.ehann.everythingmod;
 
 import com.mojang.logging.LogUtils;
+import net.ehann.everythingmod.block.ModBlock;
 import net.ehann.everythingmod.item.ModCreativeModeTabs;
 import net.ehann.everythingmod.item.ModItem;
 import net.minecraftforge.api.distmarker.Dist;
@@ -27,6 +28,7 @@ public class EverythingMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItem.register(modEventBus);
+        ModBlock.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);

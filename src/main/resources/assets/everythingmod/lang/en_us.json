@@ -1,10 +1,21 @@
 {
-  "category.everythingmod.fortnite": "§8§oFortnite",
+  "mod.everythingmod.name": "§5§oEverything and Anything §r§8Mod",
+
+
+  "category.everythingmod.fortnite": "§8§oEverything and Fortnite",
 
   "item.everythingmod.chug_jug": "§6Chug Jug",
   "item.everythingmod.shield_potion": "§9Shield Potion",
   "item.everythingmod.small_shield_potion": "§2Small Shield Potion",
   "item.everythingmod.medkit": "§2Medkit",
-  "item.everythingmod.bandages": "§7Bandages"
+  "item.everythingmod.bandages": "§7Bandages",
+
+
+  "category.everythingmod.end": "§8§oEverything and The End",
+
+  "block.everythingmod.end_ore": "§5Voidstone Ore",
+  "item.everythingmod.voidstone_chunk": "§8Chunk of The Void",
+  "item.everythingmod.voidstone": "§1Crystal of the Abyss"
+
 
 }

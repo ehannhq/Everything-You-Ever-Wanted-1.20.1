@@ -1,6 +1,7 @@
 package net.ehann.everythingmod.item;
 
 import net.ehann.everythingmod.EverythingMod;
+import net.ehann.everythingmod.block.ModBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,13 +17,17 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> EVERYTHING_TAB = CREATIVE_MODE_TAB.register("everything_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItem.CHUGJUG.get()))
-                    .title(Component.translatable("§a§lEverything Mod"))
+                    .title(Component.translatable("§5§oEverything Mod"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItem.CHUGJUG.get());
                         pOutput.accept(ModItem.SHIELD_POTION.get());
                         pOutput.accept(ModItem.SMALL_SHIELD_POTION.get());
                         pOutput.accept(ModItem.MEDKIT.get());
                         pOutput.accept(ModItem.BANDAGES.get());
+
+                        pOutput.accept(ModBlock.END_ORE.get());
+                        pOutput.accept(ModItem.VOIDSTONECHUNK.get());
+                        pOutput.accept(ModItem.VOIDSTONE.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {
