@@ -1,6 +1,8 @@
 package net.ehann.everythingmod.item.fortnite;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
@@ -41,7 +43,7 @@ public class BandagesItem extends PotionItem {
             }
             else {
                 player.sendSystemMessage(Component.literal("§cYou can't use this item anymore!"));
-                player.playSound(SoundEvents.EXPERIENCE_ORB_PICKUP, 1.0f, 1.0f);
+                pLevel.playSound(player, BlockPos.containing(player.position()), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.MASTER, 1, 1);
             }
         }
         return pStack;

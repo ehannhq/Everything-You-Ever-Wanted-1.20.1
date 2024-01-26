@@ -1,0 +1,57 @@
+{
+  "display": {
+    "icon": {
+      "item": "everythingmod:voidium_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.end.voidium_armor.title"
+    },
+    "description": {
+      "translate": "advancements.end.voidium_armor.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:end/obtain_voidium_ore",
+  "criteria": {
+    "voidium_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "everythingmod:voidium_helmet"
+            ]
+          },
+          {
+            "items": [
+              "everythingmod:voidium_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "everythingmod:voidium_leggings"
+            ]
+          },
+          {
+            "items": [
+              "everythingmod:voidium_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "voidium_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

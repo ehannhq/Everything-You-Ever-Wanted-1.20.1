@@ -2,8 +2,10 @@ package net.ehann.everythingmod.item;
 
 import net.ehann.everythingmod.EverythingMod;
 import net.ehann.everythingmod.item.fortnite.*;
-import net.ehann.everythingmod.item.the_end.VoidstoneChunkItem;
-import net.ehann.everythingmod.item.the_end.VoidstoneItem;
+import net.ehann.everythingmod.item.the_end.VoidiumChunkItem;
+import net.ehann.everythingmod.item.the_end.VoidiumItem;
+import net.ehann.everythingmod.item.the_end.VoidiumUpgradeTemplateItem;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -33,11 +35,25 @@ public class ModItem {
 
     // THE END ITEMS
 
-    public static final RegistryObject<Item> VOIDSTONECHUNK = ITEMS.register("voidstone_chunk",
-            () -> new VoidstoneChunkItem(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> VOIDIUMCHUNK = ITEMS.register("voidium_chunk",
+            () -> new VoidiumChunkItem(new Item.Properties().stacksTo(64)));
 
-    public static final RegistryObject<Item> VOIDSTONE = ITEMS.register("voidstone",
-            () -> new VoidstoneItem(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> VOIDIUM = ITEMS.register("voidium",
+            () -> new VoidiumItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> VOIDIUM_UPGRADE_TEMPLATE = ITEMS.register("voidium_upgrade_template",
+            () -> new VoidiumUpgradeTemplateItem(new Item.Properties().stacksTo(64)));
+
+
+    public static final RegistryObject<Item> VOIDIUM_HELMET = ITEMS.register("voidium_helmet",
+            () -> new ArmorItem(ModArmorMaterials.VOIDIUM, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> VOIDIUM_CHESTPLATE = ITEMS.register("voidium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.VOIDIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> VOIDIUM_LEGGINGS = ITEMS.register("voidium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.VOIDIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> VOIDIUM_BOOTS = ITEMS.register("voidium_boots",
+            () -> new ArmorItem(ModArmorMaterials.VOIDIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

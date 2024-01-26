@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "everythingmod:voidium"
+  },
+  "base": {
+    "item": "minecraft:diamond_boots"
+  },
+  "result": {
+    "item": "everythingmod:voidium_boots"
+  },
+  "template": {
+    "item": "everythingmod:voidium_upgrade_template"
+  }
+}

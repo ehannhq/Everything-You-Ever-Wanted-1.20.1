@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "everythingmod:voidium"
+  },
+  "base": {
+    "item": "minecraft:diamond_chestplate"
+  },
+  "result": {
+    "item": "everythingmod:voidium_chestplate"
+  },
+  "template": {
+    "item": "everythingmod:voidium_upgrade_template"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "everythingmod:voidium_boots_smithing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "smithing": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "smithing",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "everythingmod:voidium_boots_smithing"
+    ]
+  },
+  "sends_telemetry_event": false
+}

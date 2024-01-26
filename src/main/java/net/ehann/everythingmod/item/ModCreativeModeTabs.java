@@ -26,8 +26,16 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItem.BANDAGES.get());
 
                         pOutput.accept(ModBlock.END_ORE.get());
-                        pOutput.accept(ModItem.VOIDSTONECHUNK.get());
-                        pOutput.accept(ModItem.VOIDSTONE.get());
+                        pOutput.accept(ModItem.VOIDIUMCHUNK.get());
+                        pOutput.accept(ModItem.VOIDIUM.get());
+                        pOutput.accept(ModItem.VOIDIUM_UPGRADE_TEMPLATE.get());
+
+                        pOutput.accept(ModItem.VOIDIUM_HELMET.get());
+                        pOutput.accept(ModItem.VOIDIUM_CHESTPLATE.get());
+                        pOutput.accept(ModItem.VOIDIUM_LEGGINGS.get());
+                        pOutput.accept(ModItem.VOIDIUM_BOOTS.get());
+
+
                     })
                     .build());
     public static void register(IEventBus eventBus) {

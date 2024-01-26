@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "everythingmod:voidium_chunk"
+    },
+    "title": {
+      "translate": "advancements.end.voidium_obtain.title"
+    },
+    "description": {
+      "translate": "advancements.end.voidium_obtain.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:end/kill_dragon",
+  "criteria": {
+    "voidium_chunk": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "everythingmod:voidium_chunk"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "voidium_chunk"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

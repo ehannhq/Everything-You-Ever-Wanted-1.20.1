@@ -1,0 +1,4 @@
+// 1.20.1	2024-01-25T19:55:16.0614995	Registries
+b5914b6181e76690d283638840a41eb240035969 data/everythingmod/forge/biome_modifier/add_end_ore.json
+72daab8ed8292b6cca802cd0005e2cf7a841c430 data/everythingmod/worldgen/configured_feature/end_ore.json
+d6430cbaec0dffcc11f21370479cb3b41f10d010 data/everythingmod/worldgen/placed_feature/end_ore_placed.json

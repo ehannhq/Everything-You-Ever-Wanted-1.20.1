@@ -13,9 +13,23 @@
 
   "category.everythingmod.end": "§8§oEverything and The End",
 
-  "block.everythingmod.end_ore": "§5Voidstone Ore",
-  "item.everythingmod.voidstone_chunk": "§8Chunk of The Void",
-  "item.everythingmod.voidstone": "§1Crystal of the Abyss"
+  "block.everythingmod.end_ore": "§8Voidium Ore",
+  "item.everythingmod.voidium_chunk": "§8Chunk of Voidium",
+  "item.everythingmod.voidium": "§8Voidium Crystal",
+
+  "item.everythingmod.voidium_helmet": "§8Voidium Helmet",
+  "item.everythingmod.voidium_chestplate": "§8Voidium Chestplate",
+  "item.everythingmod.voidium_leggings": "§8Voidium Leggings",
+  "item.everythingmod.voidium_boots": "§8Voidium Boots",
+
+
+
+  "advancements.end.voidium_obtain.title": "Crystals at the End of the Game",
+  "advancements.end.voidium_obtain.description": "§aAcquire Chunks of Voidium",
+
+
+  "advancements.end.voidium_armor.title": "Cover me with the Void",
+  "advancements.end.voidium_armor.description": "§5Obtain a full set of Voidium Armor"
 
 
 }

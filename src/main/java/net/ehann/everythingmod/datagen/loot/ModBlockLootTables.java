@@ -25,7 +25,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.add(ModBlock.END_ORE.get(),
-                block -> createOreDrop(ModBlock.END_ORE.get(), ModItem.VOIDSTONECHUNK.get()));
+                block -> createOreDrop(ModBlock.END_ORE.get(), ModItem.VOIDIUMCHUNK.get()));
     }
 
     @Override
