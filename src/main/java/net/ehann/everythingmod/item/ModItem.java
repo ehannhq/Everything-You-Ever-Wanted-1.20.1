@@ -4,6 +4,7 @@ import net.ehann.everythingmod.EverythingMod;
 import net.ehann.everythingmod.item.fortnite.*;
 import net.ehann.everythingmod.item.the_end.VoidiumChunkItem;
 import net.ehann.everythingmod.item.the_end.VoidiumItem;
+import net.ehann.everythingmod.item.the_end.VoidiumSwordItem;
 import net.ehann.everythingmod.item.the_end.VoidiumUpgradeTemplateItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
@@ -33,6 +34,16 @@ public class ModItem {
     public static final RegistryObject<Item> BANDAGES = ITEMS.register("bandages",
             () -> new BandagesItem(new Item.Properties().stacksTo(15)));
 
+    public static final RegistryObject<Item> EMPTY_JUG = ITEMS.register("empty_jug",
+            () -> new EmptyJugItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> EMPTY_FLASK = ITEMS.register("empty_flask",
+            () -> new EmptyFlaskItem(new Item.Properties().stacksTo(64)));
+
+
+    public static final RegistryObject<Item> EMPTY_VIAL = ITEMS.register("empty_vial",
+            () -> new EmptyVialItem(new Item.Properties().stacksTo(64)));
+
     // THE END ITEMS
 
     public static final RegistryObject<Item> VOIDIUMCHUNK = ITEMS.register("voidium_chunk",
@@ -53,6 +64,9 @@ public class ModItem {
             () -> new ArmorItem(ModArmorMaterials.VOIDIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> VOIDIUM_BOOTS = ITEMS.register("voidium_boots",
             () -> new ArmorItem(ModArmorMaterials.VOIDIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> VOIDIUM_SWORD = ITEMS.register("voidium_sword",
+            VoidiumSwordItem::new);
 
 
     public static void register(IEventBus eventBus) {

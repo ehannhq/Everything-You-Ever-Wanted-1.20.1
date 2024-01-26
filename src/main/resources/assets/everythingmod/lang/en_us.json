@@ -5,10 +5,17 @@
   "category.everythingmod.fortnite": "§8§oEverything and Fortnite",
 
   "item.everythingmod.chug_jug": "§6Chug Jug",
+  "item.everythingmod.empty_jug": "Empty Jug",
+
   "item.everythingmod.shield_potion": "§9Shield Potion",
+  "item.everythingmod.empty_flask": "Empty Circular Flask",
+
   "item.everythingmod.small_shield_potion": "§2Small Shield Potion",
+  "item.everythingmod.empty_vial": "Empty Vial",
+
   "item.everythingmod.medkit": "§2Medkit",
   "item.everythingmod.bandages": "§7Bandages",
+
 
 
   "category.everythingmod.end": "§8§oEverything and The End",

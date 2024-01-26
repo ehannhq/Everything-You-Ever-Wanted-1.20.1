@@ -48,6 +48,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItem.VOIDIUM_CHESTPLATE);
         trimmedArmorItem(ModItem.VOIDIUM_LEGGINGS);
         trimmedArmorItem(ModItem.VOIDIUM_BOOTS);
+
+        handheldItem(ModItem.VOIDIUM_SWORD);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
@@ -106,7 +108,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/hand_held")).texture("layer0",
+                new ResourceLocation("item/handheld")).texture("layer0",
                 new ResourceLocation(EverythingMod.MOD_ID, "item/" + item.getId().getPath()));
     }
 }
