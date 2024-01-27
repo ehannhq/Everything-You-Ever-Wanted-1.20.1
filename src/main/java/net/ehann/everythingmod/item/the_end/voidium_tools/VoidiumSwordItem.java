@@ -1,16 +1,9 @@
 package net.ehann.everythingmod.item.the_end.voidium_tools;
 
 import net.ehann.everythingmod.item.ModItem;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.Level;
 
 public class VoidiumSwordItem extends SwordItem {
     public VoidiumSwordItem() {
