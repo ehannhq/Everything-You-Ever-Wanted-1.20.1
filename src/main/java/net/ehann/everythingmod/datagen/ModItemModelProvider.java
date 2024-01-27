@@ -50,6 +50,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItem.VOIDIUM_BOOTS);
 
         handheldItem(ModItem.VOIDIUM_SWORD);
+        handheldItem(ModItem.VOIDIUM_PICKAXE);
+        handheldItem(ModItem.VOIDIUM_AXE);
+        handheldItem(ModItem.VOIDIUM_SHOVEL);
+        handheldItem(ModItem.VOIDIUM_HOE);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

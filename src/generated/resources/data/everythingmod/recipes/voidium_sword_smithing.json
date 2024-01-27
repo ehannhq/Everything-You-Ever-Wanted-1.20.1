@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "everythingmod:voidium"
+  },
+  "base": {
+    "item": "minecraft:diamond_sword"
+  },
+  "result": {
+    "item": "everythingmod:voidium_sword"
+  },
+  "template": {
+    "item": "everythingmod:voidium_upgrade_template"
+  }
+}

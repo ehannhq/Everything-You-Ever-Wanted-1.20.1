@@ -1,5 +1,6 @@
-// 1.20.1	2024-01-25T23:17:52.2002572	Item Models: everythingmod
+// 1.20.1	2024-01-26T21:32:08.1481868	Item Models: everythingmod
 4d428f01cd0193fad575f0908b3839607ea70845 assets/everythingmod/models/item/voidium.json
+e074c9a5ccd9e3a77b4ffddcb3bcaccc28fa2784 assets/everythingmod/models/item/voidium_axe.json
 66f0db530a6dbdc71fa60ec60e6ea068ff29c3f7 assets/everythingmod/models/item/voidium_boots.json
 2335adc32b228b9549b689bffed29a6c4d01f5cf assets/everythingmod/models/item/voidium_boots_amethyst_trim.json
 3a456136b3094137cf820dd077ddf9f147f95ba0 assets/everythingmod/models/item/voidium_boots_copper_trim.json
@@ -34,6 +35,7 @@ aa6b19704de83539ad22ce11110e5a61ddffa2aa assets/everythingmod/models/item/voidiu
 2d273b6ed7a63e793aa18857664ced6f714b8c4d assets/everythingmod/models/item/voidium_helmet_netherite_trim.json
 c3ef421805f351d92476d2fe669cce2661e510fe assets/everythingmod/models/item/voidium_helmet_quartz_trim.json
 1986bc79fb43a2846ec003be39f05b54739592ce assets/everythingmod/models/item/voidium_helmet_redstone_trim.json
+571077a0b55c079c32ce111e48096d3d41681029 assets/everythingmod/models/item/voidium_hoe.json
 c28b33bbb256e10cb9e1d9b5283069c9b858d256 assets/everythingmod/models/item/voidium_leggings.json
 25a150a24b9f841c90bdb1868bb276fe03208d99 assets/everythingmod/models/item/voidium_leggings_amethyst_trim.json
 4ab5f80200e1bfa879fe76eea3e19c72f53728d5 assets/everythingmod/models/item/voidium_leggings_copper_trim.json
@@ -45,4 +47,7 @@ d5737c53cd3c3ab7922ba55908745eb98961ae36 assets/everythingmod/models/item/voidiu
 a4dc16a5b8109bcc0ac997a3cf12616c98296bd6 assets/everythingmod/models/item/voidium_leggings_netherite_trim.json
 2a2315658d18e2f560db145630b53d5281e6374e assets/everythingmod/models/item/voidium_leggings_quartz_trim.json
 5b629b74330fd0f2e7dbe2f1fa8ac0594a1e2a1a assets/everythingmod/models/item/voidium_leggings_redstone_trim.json
+4162c282650c01729f9167f3b8eb53323d2329ce assets/everythingmod/models/item/voidium_pickaxe.json
+5721e8c2239b86646ee5aec558fae957a189be5b assets/everythingmod/models/item/voidium_shovel.json
+2b15c775f91876664f97bb5dac3360ba4c09aa35 assets/everythingmod/models/item/voidium_sword.json
 1dc37c5853b57dc46e3a44329858e2eccfbf4ca5 assets/everythingmod/models/item/voidium_upgrade_template.json

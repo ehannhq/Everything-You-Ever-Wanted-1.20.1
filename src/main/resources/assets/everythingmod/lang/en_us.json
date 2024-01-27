@@ -29,14 +29,20 @@
   "item.everythingmod.voidium_leggings": "§8Voidium Leggings",
   "item.everythingmod.voidium_boots": "§8Voidium Boots",
 
+  "item.everythingmod.voidium_sword": "§8Voidium Sword",
+  "item.everythingmod.voidium_pickaxe": "§8Voidium Pickaxe",
+  "item.everythingmod.voidium_axe": "§8Voidium Axe",
+  "item.everythingmod.voidium_shovel": "§8Voidium Shovel",
+  "item.everythingmod.voidium_hoe": "§8Voidium Hoe",
 
 
   "advancements.end.voidium_obtain.title": "Crystals at the End of the Game",
   "advancements.end.voidium_obtain.description": "§aAcquire Chunks of Voidium",
 
+  "advancements.end.voidium_armor.title": "Cover Me With The Void",
+  "advancements.end.voidium_armor.description": "§5Obtain a full set of Voidium Armor",
 
-  "advancements.end.voidium_armor.title": "Cover me with the Void",
-  "advancements.end.voidium_armor.description": "§5Obtain a full set of Voidium Armor"
-
+  "advancements.husbandry.voidium_hoe.title": "Seriously, This Dedicated?",
+  "advancements.husbandry.voidium_hoe.description": "§5Craft a Voidium Hoe- Wait, what did you just do?"
 
 }

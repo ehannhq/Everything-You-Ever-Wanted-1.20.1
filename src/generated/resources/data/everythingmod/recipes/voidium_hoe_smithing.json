@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "everythingmod:voidium"
+  },
+  "base": {
+    "item": "minecraft:diamond_hoe"
+  },
+  "result": {
+    "item": "everythingmod:voidium_hoe"
+  },
+  "template": {
+    "item": "everythingmod:voidium_upgrade_template"
+  }
+}

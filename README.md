@@ -7,6 +7,14 @@ itself is very inefficient, bear with me.
 Why am I on GitHub? Because I want to work on my laptop and my PC, as well as to serve 
 as a backup.
 
+## What is _Everything and Anything_?
+
+A Minecraft 1.20.1 Forge mod that adds what (I) you truly wanted in Minecraft. From
+upgradable bows, tridents, shields and elytras, to an entirely new Armor/Tool set 
+that's inspired by The End, to giving underappreciated blocks/items a new 
+purpose/meaning, to gag items that makes no sense into why its in Minecraft, 
+this mod is truly, _Everything and Anything_.
+
 ## Features
 _Everything and Fortnite_
 - Chug Jug _(Fortnite)_
@@ -26,31 +34,28 @@ _Everything and The End_
 ## Upcoming Features
 - --
 _Everything and Fortnite_
-- Liquid Chug _(Fortnite)_
-- Empty Jug _(Fortnite)_
-- Empty Big Circular Flask _(Fortnite)_
-- Empty Small Vial _(Fortnite)_
+- Liquid Chug
+- Empty Jug
+- Empty Big Circular Flask
+- Empty Small Vial
+- Raven Team Leader
+
 - --
 _Everything and The End_
 - Bow of the Void
 - Trident of the Void
+- Shield of the Void
 - Ender Dragon's Elytra
+
 - --
-_Everything and Truly Anything_
-- _This is Minecraft_
-  - Crafted with every material (including Voidium)
-- _Ban Hammer_
-  - Deals next to 0 damage, with the off-chance of insta-killing them.
-- _Sword of Sacrifce_
-  - Insta-kills an entity, at the cost of the user's life.
-- _A True Gambler's Sword_
-  - Either insta-kills an enemy, or insta-kills the user.
-- _Schrödinger's Sword_
-  - Doesn't work yet always works
-- _Fried Chicken_
-  - Fried Chicken
-- _Boots that will make up jump too high_
-  - pretty self-explanatory
+_Everything and The Nether_
+- Bow of the Nether
+- Trident of the Nether
+- Shield of the Nether
+- Molten Elytra
+
+- --
+_Everything and The Deep Dark_
 
 ## Socials
 - [Instagram](https://www.instagram.com/ehann.h/)

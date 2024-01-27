@@ -31,6 +31,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         smithing(pWriter, ModItem.VOIDIUM_UPGRADE_TEMPLATE.get(), Items.DIAMOND_LEGGINGS, ModItem.VOIDIUM.get(), RecipeCategory.MISC, ModItem.VOIDIUM_LEGGINGS.get());
         smithing(pWriter, ModItem.VOIDIUM_UPGRADE_TEMPLATE.get(), Items.DIAMOND_BOOTS, ModItem.VOIDIUM.get(), RecipeCategory.MISC, ModItem.VOIDIUM_BOOTS.get());
 
+        smithing(pWriter, ModItem.VOIDIUM_UPGRADE_TEMPLATE.get(), Items.DIAMOND_SWORD, ModItem.VOIDIUM.get(), RecipeCategory.MISC, ModItem.VOIDIUM_SWORD.get());
+        smithing(pWriter, ModItem.VOIDIUM_UPGRADE_TEMPLATE.get(), Items.DIAMOND_PICKAXE, ModItem.VOIDIUM.get(), RecipeCategory.MISC, ModItem.VOIDIUM_PICKAXE.get());
+        smithing(pWriter, ModItem.VOIDIUM_UPGRADE_TEMPLATE.get(), Items.DIAMOND_AXE, ModItem.VOIDIUM.get(), RecipeCategory.MISC, ModItem.VOIDIUM_AXE.get());
+        smithing(pWriter, ModItem.VOIDIUM_UPGRADE_TEMPLATE.get(), Items.DIAMOND_SHOVEL, ModItem.VOIDIUM.get(), RecipeCategory.MISC, ModItem.VOIDIUM_SHOVEL.get());
+        smithing(pWriter, ModItem.VOIDIUM_UPGRADE_TEMPLATE.get(), Items.DIAMOND_HOE, ModItem.VOIDIUM.get(), RecipeCategory.MISC, ModItem.VOIDIUM_HOE.get());
+
 //        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItem.VOIDSTONECHUNK.get())
 //                .pattern("PPP")
 //                .pattern("PPP")

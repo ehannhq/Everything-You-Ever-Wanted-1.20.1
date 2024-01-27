@@ -41,6 +41,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItem.VOIDIUM_LEGGINGS.get());
                         pOutput.accept(ModItem.VOIDIUM_BOOTS.get());
 
+                        pOutput.accept(ModItem.VOIDIUM_SWORD.get());
+                        pOutput.accept(ModItem.VOIDIUM_PICKAXE.get());
+                        pOutput.accept(ModItem.VOIDIUM_AXE.get());
+                        pOutput.accept(ModItem.VOIDIUM_SHOVEL.get());
+                        pOutput.accept(ModItem.VOIDIUM_HOE.get());
+
 
                     })
                     .build());

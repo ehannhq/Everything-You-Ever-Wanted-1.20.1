@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "everythingmod:voidium_hoe"
+    },
+    "title": {
+      "translate": "advancements.husbandry.voidium_hoe.title"
+    },
+    "description": {
+      "translate": "advancements.husbandry.voidium_hoe.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:husbandry/plant_seed",
+  "criteria": {
+    "voidium_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "everythingmod:voidium_hoe"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "voidium_hoe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
