@@ -45,11 +45,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 //                .unlockedBy(getHasName(ModBlock.END_ORE.get()), has(ModBlock.END_ORE.get()))
 //                .save(pWriter);
 
-//            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItem.VOIDSTONE.get())
-//                    .requires(ModItem.VOIDSTONECHUNK.get())
-//                    .unlockedBy(getHasName(ModItem.VOIDSTONECHUNK.get()), has(ModItem.VOIDSTONECHUNK.get()))
-//                    .save(pWriter);
-//
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItem.MINECRAFT.get())
+                    .requires(ModItem.VOIDIUM.get())
+                    .requires(Items.NETHERITE_INGOT)
+                    .requires(Items.DIAMOND)
+                    .requires(Items.EMERALD)
+                    .requires(Items.GOLD_INGOT)
+                    .requires(Items.IRON_INGOT)
+                    .requires(Items.LAPIS_LAZULI)
+                    .requires(Items.REDSTONE)
+                    .requires(Items.AMETHYST_SHARD)
+                    .save(pWriter);
     }
 
 

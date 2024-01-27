@@ -15,6 +15,9 @@ public class ModItem {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, EverythingMod.MOD_ID);
 
+    public static final RegistryObject<Item> MINECRAFT = ITEMS.register("minecraft",
+            () -> new MinecraftItem(new Item.Properties().stacksTo(1)));
+
     // FORTNITE ITEMS
 
     public static final RegistryObject<Item> CHUGJUG = ITEMS.register("chug_jug",

@@ -1,5 +1,6 @@
 {
   "mod.everythingmod.name": "§5§oEverything and Anything §r§8Mod",
+  "item.everythingmod.minecraft": "§6Minecraft",
 
 
   "category.everythingmod.fortnite": "§8§oEverything and Fortnite",
@@ -35,6 +36,9 @@
   "item.everythingmod.voidium_shovel": "§8Voidium Shovel",
   "item.everythingmod.voidium_hoe": "§8Voidium Hoe",
 
+
+  "advancements.story.minecraft.title": "Everything and Minecraft",
+  "advancements.story.minecraft.description": "§5Craft the §5§oMinecraft §r§5item",
 
   "advancements.end.voidium_obtain.title": "Crystals at the End of the Game",
   "advancements.end.voidium_obtain.description": "§aAcquire Chunks of Voidium",

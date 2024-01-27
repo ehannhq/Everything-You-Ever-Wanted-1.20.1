@@ -19,6 +19,8 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItem.CHUGJUG.get()))
                     .title(Component.literal("§5§oEverything Mod"))
                     .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItem.MINECRAFT.get());
+
                         pOutput.accept(ModItem.CHUGJUG.get());
                         pOutput.accept(ModItem.EMPTY_JUG.get());
 

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "everythingmod:minecraft"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_voidium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "everythingmod:voidium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_voidium",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "everythingmod:minecraft"
+    ]
+  },
+  "sends_telemetry_event": false
+}

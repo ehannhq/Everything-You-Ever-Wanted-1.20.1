@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "everythingmod:minecraft"
+    },
+    "title": {
+      "translate": "advancements.story.minecraft.title"
+    },
+    "description": {
+      "translate": "advancements.story.minecraft.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:story/enter_the_end",
+  "criteria": {
+    "em_minecraft": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "everythingmod:minecraft"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "em_minecraft"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
