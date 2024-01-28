@@ -45,17 +45,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 //                .unlockedBy(getHasName(ModBlock.END_ORE.get()), has(ModBlock.END_ORE.get()))
 //                .save(pWriter);
 
-            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItem.MINECRAFT.get())
-                    .requires(ModItem.VOIDIUM.get())
-                    .requires(Items.NETHERITE_INGOT)
-                    .requires(Items.DIAMOND)
-                    .requires(Items.EMERALD)
-                    .requires(Items.GOLD_INGOT)
-                    .requires(Items.IRON_INGOT)
-                    .requires(Items.LAPIS_LAZULI)
-                    .requires(Items.REDSTONE)
-                    .requires(Items.AMETHYST_SHARD)
-                    .save(pWriter);
+//            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItem.MINECRAFT.get())
+//                    .requires(ModItem.VOIDIUM.get())
+//                    .requires(Items.NETHERITE_INGOT)
+//                    .requires(Items.DIAMOND)
+//                    .requires(Items.EMERALD)
+//                    .requires(Items.GOLD_INGOT)
+//                    .requires(Items.IRON_INGOT)
+//                    .requires(Items.LAPIS_LAZULI)
+//                    .requires(Items.REDSTONE)
+//                    .requires(Items.AMETHYST_SHARD)
+//                    .save(pWriter);
     }
 
 
@@ -79,7 +79,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void smithing(Consumer<FinishedRecipe> pFinishedRecipeConsumer, Item pSmithingTemplate, Item pIngredientItem, Item pUpgradeItem, RecipeCategory pCategory, Item pResultItem) {
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(pSmithingTemplate),
                 Ingredient.of(pIngredientItem), Ingredient.of(pUpgradeItem),
-                pCategory, pResultItem).unlocks("smithing", has(Items.STONE)).save(pFinishedRecipeConsumer,
+                pCategory, pResultItem).unlocks("smithing", has(pIngredientItem)).save(pFinishedRecipeConsumer,
                 EverythingMod.MOD_ID + ":" + getItemName(pResultItem) + "_smithing");
     }
 }

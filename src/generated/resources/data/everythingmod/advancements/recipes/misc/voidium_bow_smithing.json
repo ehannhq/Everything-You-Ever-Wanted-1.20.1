@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "everythingmod:voidium_leggings_smithing"
+        "recipe": "everythingmod:voidium_bow_smithing"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -12,7 +12,7 @@
         "items": [
           {
             "items": [
-              "minecraft:diamond_leggings"
+              "minecraft:bow"
             ]
           }
         ]
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "everythingmod:voidium_leggings_smithing"
+      "everythingmod:voidium_bow_smithing"
     ]
   },
   "sends_telemetry_event": false

@@ -10,7 +10,7 @@ as a backup.
 ## What is _Everything and Anything_?
 
 A Minecraft 1.20.1 Forge mod that adds what (I) you truly wanted in Minecraft. From
-upgradable bows, tridents, shields and elytras, to an entirely new Armor/Tool set 
+upgradable tridents, shields and elytras, to an entirely new Armor/Tool set 
 that's inspired by The End, to giving underappreciated blocks/items a new 
 purpose/meaning, to gag items that makes no sense into why its in Minecraft, 
 this mod is truly, _Everything and Anything_.
@@ -42,14 +42,12 @@ _Everything and Fortnite_
 
 - --
 _Everything and The End_
-- Bow of the Void
 - Trident of the Void
 - Shield of the Void
 - Ender Dragon's Elytra
 
 - --
 _Everything and The Nether_
-- Bow of the Nether
 - Trident of the Nether
 - Shield of the Nether
 - Molten Elytra

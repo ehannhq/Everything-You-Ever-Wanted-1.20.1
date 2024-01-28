@@ -76,6 +76,11 @@ public class ModItem {
             VoidiumShovelItem::new);
     public static final RegistryObject<Item> VOIDIUM_HOE = ITEMS.register("voidium_hoe",
             VoidiumHoeItem::new);
+//    public static final RegistryObject<Item> VOIDIUM_TRIDENT = ITEMS.register("voidium_trident",
+//            VoidiumTridentItem::new);
+//    public static final RegistryObject<Item> VOIDIUM_SHIELD = ITEMS.register("voidium_shield",
+//            VoidiumShieldItem::new);
+
 
 
     public static void register(IEventBus eventBus) {
