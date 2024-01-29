@@ -19,7 +19,6 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItem.CHUGJUG.get()))
                     .title(Component.literal("§5§oEverything Mod"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItem.MINECRAFT.get());
 
                         pOutput.accept(ModItem.CHUGJUG.get());
                         pOutput.accept(ModItem.EMPTY_JUG.get());
@@ -48,8 +47,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItem.VOIDIUM_AXE.get());
                         pOutput.accept(ModItem.VOIDIUM_SHOVEL.get());
                         pOutput.accept(ModItem.VOIDIUM_HOE.get());
-//                        pOutput.accept(ModItem.VOIDIUM_TRIDENT.get());
-//                        pOutput.accept(ModItem.VOIDIUM_SHIELD.get());
 
 
                     })
