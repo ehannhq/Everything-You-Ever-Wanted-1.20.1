@@ -37,7 +37,7 @@ public class VoidiumAxeItem extends AxeItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(ModItem.VOIDIUM.get());
             }
-        }, 9, -3f, new Properties().stacksTo(1));
+        }, 8, -3f, new Properties().stacksTo(1));
 
 //      super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }

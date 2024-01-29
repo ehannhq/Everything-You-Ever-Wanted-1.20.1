@@ -1,20 +1,15 @@
 package net.ehann.everythingmod.item.the_end.voidium_tools;
 
-import com.google.common.collect.Multimap;
 import net.ehann.everythingmod.item.ModItem;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResultHolder;
+import net.ehann.everythingmod.item.the_end.voidium_tools.abilities.VoidiumSwordAbility;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.Level;
+
+import java.util.Random;
 
 public class VoidiumSwordItem extends SwordItem {
     public VoidiumSwordItem() {
@@ -48,16 +43,23 @@ public class VoidiumSwordItem extends SwordItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(ModItem.VOIDIUM.get());
             }
-        }, 6, -2.4f, new Properties().stacksTo(1));
+        }, 5, -2.4f, new Properties().stacksTo(1));
 //        super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        if (!pLevel.isClientSide) {
-            InteractionResultHolder<ItemStack> ar = super.use(pLevel, pPlayer, pUsedHand);
-            return ar;
+    public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
+        int probability = (int)(Math.random() * 100) + 1;
+        int roll = (int)(Math.random() * 100) + 1;
+
+        if (roll <= probability) {
+            new VoidiumSwordAbility(pStack, pTarget, pAttacker);
         }
-        return InteractionResultHolder.pass(pPlayer.getItemInHand(pUsedHand));
+
+        pStack.hurtAndBreak(1, pAttacker, (p_43296_) -> {
+            p_43296_.broadcastBreakEvent(EquipmentSlot.MAINHAND);
+        });
+        return true;
     }
+
 }
