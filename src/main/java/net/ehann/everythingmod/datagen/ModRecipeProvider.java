@@ -26,6 +26,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pWriter, VOIDIUM, RecipeCategory.MISC, ModItem.VOIDIUM.get(), 0.25f, 200, "voidstone");
         oreBlasting(pWriter, VOIDIUM, RecipeCategory.MISC, ModItem.VOIDIUM.get(), 0.25f, 100, "voidstone");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItem.VOIDIUM_UPGRADE_TEMPLATE.get(), 2)
+                .pattern("DVD")
+                .pattern("DED")
+                .pattern("DDD")
+                .define('D', Items.DIAMOND)
+                .define('V', ModItem.VOIDIUM_UPGRADE_TEMPLATE.get())
+                .define('E', Items.END_STONE)
+                .unlockedBy(getHasName(ModItem.VOIDIUM_UPGRADE_TEMPLATE.get()), has(ModItem.VOIDIUM_UPGRADE_TEMPLATE.get()))
+                .save(pWriter);
+
         smithing(pWriter, ModItem.VOIDIUM_UPGRADE_TEMPLATE.get(), Items.DIAMOND_HELMET, ModItem.VOIDIUM.get(), RecipeCategory.MISC, ModItem.VOIDIUM_HELMET.get());
         smithing(pWriter, ModItem.VOIDIUM_UPGRADE_TEMPLATE.get(), Items.DIAMOND_CHESTPLATE, ModItem.VOIDIUM.get(), RecipeCategory.MISC, ModItem.VOIDIUM_CHESTPLATE.get());
         smithing(pWriter, ModItem.VOIDIUM_UPGRADE_TEMPLATE.get(), Items.DIAMOND_LEGGINGS, ModItem.VOIDIUM.get(), RecipeCategory.MISC, ModItem.VOIDIUM_LEGGINGS.get());

@@ -3,6 +3,7 @@ package net.ehann.everythingmod.item;
 import net.ehann.everythingmod.EverythingMod;
 import net.ehann.everythingmod.item.fortnite.*;
 import net.ehann.everythingmod.item.the_end.*;
+import net.ehann.everythingmod.item.the_end.voidium_tools.VoidiumSwordItem;
 import net.ehann.everythingmod.item.the_end.voidium_tools.*;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
@@ -76,10 +77,6 @@ public class ModItem {
             VoidiumShovelItem::new);
     public static final RegistryObject<Item> VOIDIUM_HOE = ITEMS.register("voidium_hoe",
             VoidiumHoeItem::new);
-//    public static final RegistryObject<Item> VOIDIUM_TRIDENT = ITEMS.register("voidium_trident",
-//            VoidiumTridentItem::new);
-//    public static final RegistryObject<Item> VOIDIUM_SHIELD = ITEMS.register("voidium_shield",
-//            VoidiumShieldItem::new);
 
 
 
