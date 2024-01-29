@@ -6,6 +6,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.player.Player;
@@ -55,7 +56,6 @@ public class VoidiumSwordItem extends SwordItem {
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
         if (!pLevel.isClientSide) {
             InteractionResultHolder<ItemStack> ar = super.use(pLevel, pPlayer, pUsedHand);
-            pPlayer.sendSystemMessage(Component.literal("HEYY!"));
             return ar;
         }
         return InteractionResultHolder.pass(pPlayer.getItemInHand(pUsedHand));
