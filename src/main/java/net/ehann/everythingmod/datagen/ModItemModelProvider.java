@@ -40,8 +40,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItem.MINECRAFT);
-
         simpleItem(ModItem.VOIDIUMCHUNK);
         simpleItem(ModItem.VOIDIUM);
         simpleItem(ModItem.VOIDIUM_UPGRADE_TEMPLATE);
