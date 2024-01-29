@@ -12,16 +12,19 @@ as a backup.
 A Minecraft 1.20.1 Forge mod that adds what (I) you truly wanted in Minecraft. From
 upgradable tridents, shields and elytras, to an entirely new Armor/Tool set 
 that's inspired by The End, to giving underappreciated blocks/items a new 
-purpose/meaning, to gag items that makes no sense into why its in Minecraft, 
-this mod is truly, _Everything and Anything_.
+purpose/meaning, to gag items that makes no sense into why its in Minecraft.
+This mod keeps to true Vanilla minecraft, but maybe in the future it will expand
+into something, big. 
+
+_Everything and Anything_, a mod with _everything_.
 
 ## Features
 _Everything and Fortnite_
-- Chug Jug _(Fortnite)_
-- Shield Potion _(Fortnite)_
-- Small Shield Potion _(Fortnite)_
-- Medkit _(Fortnite)_
-- Bandage _(Fortnite)_
+- Chug Jug **(NO RECIPE)**
+- Shield Potion **(NO RECIPE)**
+- Small Shield Potion **(NO RECIPE)**
+- Medkit **(NO RECIPE)**
+- Bandage **(NO RECIPE)**
 - --
 _Everything and The End_
 - Voidium Ore
