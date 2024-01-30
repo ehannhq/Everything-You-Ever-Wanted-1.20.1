@@ -15,7 +15,7 @@ public class VoidiumAxeItem extends AxeItem {
 
             @Override
             public float getSpeed() {
-                return 0;
+                return 10;
             }
 
             @Override

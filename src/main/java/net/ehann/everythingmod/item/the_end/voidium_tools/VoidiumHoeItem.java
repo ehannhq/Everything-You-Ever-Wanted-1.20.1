@@ -10,7 +10,7 @@ public class VoidiumHoeItem extends HoeItem {
         super(new Tier() {
             @Override
             public int getUses() {
-                return 1562;
+                return 9999999;
             }
 
             @Override

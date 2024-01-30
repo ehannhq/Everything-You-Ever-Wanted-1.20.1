@@ -15,7 +15,7 @@ public class VoidiumShovelItem extends ShovelItem {
 
             @Override
             public float getSpeed() {
-                return 0;
+                return 10;
             }
 
             @Override

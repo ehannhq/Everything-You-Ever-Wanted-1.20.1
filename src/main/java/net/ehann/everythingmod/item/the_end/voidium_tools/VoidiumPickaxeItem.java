@@ -2,6 +2,7 @@ package net.ehann.everythingmod.item.the_end.voidium_tools;
 
 import net.ehann.everythingmod.item.ModItem;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
@@ -20,7 +21,7 @@ public class VoidiumPickaxeItem extends PickaxeItem {
 
             @Override
             public float getSpeed() {
-                return 0;
+                return 10;
             }
 
             @Override
@@ -46,9 +47,14 @@ public class VoidiumPickaxeItem extends PickaxeItem {
 
 //        super(new Tier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
-
     @Override
     public boolean mineBlock(ItemStack pStack, Level pLevel, BlockState pState, BlockPos pPos, LivingEntity pEntityLiving) {
-        return super.mineBlock(pStack, pLevel, pState, pPos, pEntityLiving);
+        if (!pLevel.isClientSide && pState.getDestroySpeed(pLevel, pPos) != 0.0F) {
+            pStack.hurtAndBreak(1, pEntityLiving, (p_40992_) -> {
+                p_40992_.broadcastBreakEvent(EquipmentSlot.MAINHAND);
+            });
+        }
+        return true;
     }
+
 }
