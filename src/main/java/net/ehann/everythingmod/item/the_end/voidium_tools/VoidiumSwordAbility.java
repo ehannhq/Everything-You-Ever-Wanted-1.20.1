@@ -1,38 +1,52 @@
 package net.ehann.everythingmod.item.the_end.voidium_tools;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.phys.Vec3;
 
 public class VoidiumSwordAbility {
-
-    public VoidiumSwordAbility(ItemStack pStack, LivingEntity pAttacker) {
-        Player player = pAttacker instanceof Player ? (Player)pAttacker : null;
-        Level world = player.level();
-
-        if (!world.isClientSide) {
-            float playerHealth = player.getHealth();
-            // Sound is not working.
-            world.playSound(player, BlockPos.containing(player.position()), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.MASTER, 1, 1);
-
-            double roll = (Math.random() * 100) + 1;
-
-            if (roll >= 16 && roll < 84) { // 1 z-score, 68% chance of occurring
-                player.setHealth(playerHealth + 1.0f);
-            }
-            else if (roll >= 2.5 && roll < 16 || roll >= 84 && roll < 97.5) { // 2 z-scores, 27% chance of occurring
-                player.setHealth(playerHealth + 2.0f);
-
-            }
-            else if (roll < 2.5 || roll >= 97.5) { // 3 z-scores, 5% chance of occurring
-                player.setHealth(playerHealth + 6.0f);
-            }
+    public VoidiumSwordAbility(Player pPlayer, double proportion) {
+        if (proportion == 1.00) {
+            pPlayer.addEffect(new MobEffectInstance( // SPEED
+                    MobEffect.byId(1), 300, 1, true, true, true));
+            pPlayer.addEffect(new MobEffectInstance(
+                    MobEffect.byId(10), 300, 1, true, true, true));
+            pPlayer.addEffect(new MobEffectInstance( // STRENGTH
+                    MobEffect.byId(5), 300, 1, true, true, true));
+        }
+        else if (proportion >= 0.70) {
+            pPlayer.addEffect(new MobEffectInstance( // SPEED
+                    MobEffect.byId(1), 300, 1, true, true, true));
+            pPlayer.addEffect(new MobEffectInstance( // REGEN
+                    MobEffect.byId(10), 240, 1, true, true, true));
+            pPlayer.addEffect(new MobEffectInstance( // STRENGTH
+                    MobEffect.byId(5), 200, 1, true, true, true));
+        }
+        else if (proportion >= 0.50) {
+            pPlayer.addEffect(new MobEffectInstance( // SPEED
+                    MobEffect.byId(1), 300, 1, true, true, true));
+            pPlayer.addEffect(new MobEffectInstance( // REGEN
+                    MobEffect.byId(10), 240, 1, true, true, true));
+            pPlayer.addEffect(new MobEffectInstance( // STRENGTH
+                    MobEffect.byId(5), 200, 0, true, true, true));
+        }
+        else if (proportion >= 0.30) {
+            pPlayer.addEffect(new MobEffectInstance( // SPEED
+                    MobEffect.byId(1), 300, 1, true, true, true));
+            pPlayer.addEffect(new MobEffectInstance( // REGEN
+                    MobEffect.byId(10), 240, 0, true, true, true));
+            pPlayer.addEffect(new MobEffectInstance( // STRENGTH
+                    MobEffect.byId(5), 200, 0, true, true, true));
+        }
+        else if(proportion >= 0.10) {
+            pPlayer.addEffect(new MobEffectInstance( // SPEED
+                    MobEffect.byId(1), 300, 0, true, true, true));
+            pPlayer.addEffect(new MobEffectInstance( // REGEN
+                    MobEffect.byId(10), 240, 0, true, true, true));
+        }
+        else {
+            pPlayer.addEffect(new MobEffectInstance( // SPEED
+                    MobEffect.byId(1), 300, 0, true, true, true));
         }
     }
 }

@@ -10,8 +10,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    VOIDIUM("voidium", 26, new int[]{3, 8, 6, 3}, 15,
-            SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0f, 0.0f, () -> Ingredient.of(ModItem.VOIDIUM.get()));
+    VOIDIUM("voidium", 26, new int[]{3, 6, 6, 2}, 15,
+            SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0f, 0.1f, () -> Ingredient.of(ModItem.VOIDIUM.get()));
     ;
 
 
