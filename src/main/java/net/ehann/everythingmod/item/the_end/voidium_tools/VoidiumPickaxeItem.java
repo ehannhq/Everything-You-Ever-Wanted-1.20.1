@@ -2,14 +2,19 @@ package net.ehann.everythingmod.item.the_end.voidium_tools;
 
 import net.ehann.everythingmod.item.ModItem;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class VoidiumPickaxeItem extends PickaxeItem {
     public VoidiumPickaxeItem() {
@@ -47,14 +52,11 @@ public class VoidiumPickaxeItem extends PickaxeItem {
 
 //        super(new Tier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
+
     @Override
-    public boolean mineBlock(ItemStack pStack, Level pLevel, BlockState pState, BlockPos pPos, LivingEntity pEntityLiving) {
-        if (!pLevel.isClientSide && pState.getDestroySpeed(pLevel, pPos) != 0.0F) {
-            pStack.hurtAndBreak(1, pEntityLiving, (p_40992_) -> {
-                p_40992_.broadcastBreakEvent(EquipmentSlot.MAINHAND);
-            });
-        }
-        return true;
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        pTooltipComponents.add(Component.literal(""));
+        pTooltipComponents.add(Component.translatable("category.everythingmod.end"));
     }
 
 }
