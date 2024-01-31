@@ -21,12 +21,11 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(ModItem.CHUGJUG.get());
-                        pOutput.accept(ModItem.EMPTY_JUG.get());
-
                         pOutput.accept(ModItem.SHIELD_POTION.get());
-                        pOutput.accept(ModItem.EMPTY_FLASK.get());
-
                         pOutput.accept(ModItem.SMALL_SHIELD_POTION.get());
+
+                        pOutput.accept(ModItem.EMPTY_JUG.get());
+                        pOutput.accept(ModItem.EMPTY_FLASK.get());
                         pOutput.accept(ModItem.EMPTY_VIAL.get());
 
                         pOutput.accept(ModItem.MEDKIT.get());
