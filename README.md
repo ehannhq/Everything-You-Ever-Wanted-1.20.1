@@ -20,11 +20,12 @@ _Everything and Anything_, a mod with _everything_.
 
 ## Features
 _Everything and Fortnite_
-- Chug Jug **(NO RECIPE)**
-- Shield Potion **(NO RECIPE)**
-- Small Shield Potion **(NO RECIPE)**
-- Medkit **(NO RECIPE)**
-- Bandage **(NO RECIPE)**
+- Chug Jug
+- Shield Potion
+- Small Shield Potion
+- Medkit
+- Bandage
+
 - --
 _Everything and The End_
 - Voidium Ore
@@ -37,10 +38,6 @@ _Everything and The End_
 ## Upcoming Features
 - --
 _Everything and Fortnite_
-- Liquid Chug
-- Empty Jug
-- Empty Big Circular Flask
-- Empty Small Vial
 - Raven Team Leader
 
 - --
