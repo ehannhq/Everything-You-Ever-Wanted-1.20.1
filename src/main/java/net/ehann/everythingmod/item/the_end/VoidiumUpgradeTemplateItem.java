@@ -25,7 +25,6 @@ public class VoidiumUpgradeTemplateItem extends Item {
         pTooltipComponents.add(Component.literal(""));
         pTooltipComponents.add(Component.literal("§7Applies to:"));
         pTooltipComponents.add(Component.literal("§9 Diamond Equipment"));
-        pTooltipComponents.add(Component.literal("§9 Bows"));
         pTooltipComponents.add(Component.literal("§9 Tridents"));
         pTooltipComponents.add(Component.literal("§9 Shields"));
         pTooltipComponents.add(Component.literal("§7Ingredients:"));

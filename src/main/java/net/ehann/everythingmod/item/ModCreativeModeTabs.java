@@ -24,10 +24,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItem.SHIELD_POTION.get());
                         pOutput.accept(ModItem.SMALL_SHIELD_POTION.get());
 
-                        pOutput.accept(ModItem.EMPTY_JUG.get());
-                        pOutput.accept(ModItem.EMPTY_FLASK.get());
-                        pOutput.accept(ModItem.EMPTY_VIAL.get());
-
                         pOutput.accept(ModItem.MEDKIT.get());
                         pOutput.accept(ModItem.BANDAGES.get());
 

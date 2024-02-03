@@ -33,16 +33,6 @@ public class ModItem {
     public static final RegistryObject<Item> BANDAGES = ITEMS.register("bandages",
             () -> new BandagesItem(new Item.Properties().stacksTo(15)));
 
-    public static final RegistryObject<Item> EMPTY_JUG = ITEMS.register("empty_jug",
-            () -> new EmptyJugItem(new Item.Properties().stacksTo(64)));
-
-    public static final RegistryObject<Item> EMPTY_FLASK = ITEMS.register("empty_flask",
-            () -> new EmptyFlaskItem(new Item.Properties().stacksTo(64)));
-
-
-    public static final RegistryObject<Item> EMPTY_VIAL = ITEMS.register("empty_vial",
-            () -> new EmptyVialItem(new Item.Properties().stacksTo(64)));
-
     // THE END ITEMS
 
     public static final RegistryObject<Item> VOIDIUMCHUNK = ITEMS.register("voidium_chunk",

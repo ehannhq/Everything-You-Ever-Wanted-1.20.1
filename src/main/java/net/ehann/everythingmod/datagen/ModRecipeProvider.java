@@ -23,6 +23,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
+        // Everything and the End
         oreSmelting(pWriter, VOIDIUM, RecipeCategory.MISC, ModItem.VOIDIUM.get(), 0.25f, 200, "voidstone");
         oreBlasting(pWriter, VOIDIUM, RecipeCategory.MISC, ModItem.VOIDIUM.get(), 0.25f, 100, "voidstone");
 
